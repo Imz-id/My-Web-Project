@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tools — IMVION</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="IMVION Logo" id="site-logo-img">
+                <span id="site-logo-text">IMVION</span>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documentation.html">Dokumentasi</a></li>
+                <li><a href="tools.html" class="active">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Dark Mode">☀</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container fade-in-up">
+        <header class="page-header">
+            <h1>MY TOOLS</h1>
+            <div class="hero-divider center-divider"></div>
+            <p>Kumpulan tools dan website yang sering digunakan</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari tools (misal: downloader, youtube)...">
+            <button id="clear-search" aria-label="Clear Search">✕</button>
+        </div>
+
+        <div id="no-results" class="hidden">Tidak ada hasil ditemukan.</div>
+        
+        <div class="grid-container" id="tools-grid">
+            <!-- Tools will be injected here via JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> IMVION. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
